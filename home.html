@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img class="logo" src="./imagenes/logo.png" alt="Logo de Calm Oasis">
+        <h1 class="titulo-principal">CALM OASIS</h1>
+        <ul class="menu__lista">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo de Calm Oasis">
+        </ul>
+    </header>
+    <section class="linea">
+        <li class="menu_item"><a class="menu_admin" href="./home.html">Como Te Sientes</a></li>
+        <li class="menu_item"><a class="menu_admin" href="./chat.html">Chat Personalizado</a></li>
+    </section>
+
+    <div id="wrap">
+        <div class="container">
+            <h1 class="texto">¿Cómo te sientes?</h1>
+            <p class="texto">Selecciona tu nivel de satisfacción:</p>
+            <button class="rating-button" value="1" onclick="mostrarSeccion('seccion1');">1</button>
+            <button class="rating-button" value="2" onclick="mostrarSeccion('seccion2');">2</button>
+            <button class="rating-button" value="3" onclick="mostrarSeccion('seccion3');">3</button>
+            <button class="rating-button" value="4" onclick="mostrarSeccion('seccion4');">4</button>
+            <button class="rating-button" value="5" onclick="mostrarSeccion('seccion5');">5</button>
+    
+        </div>
+    </div>
+    <div id="wrap">
+        <!-- Secciones ocultas -->
+        <div id="seccion1" class="hidden">
+            <h2 class="text">Nivel De Estres 1</h2>
+            <p class="texto2">Recomendaciones:</p>
+            <p class="texto3">La música nos permite relajarnos a través de un proceso físico por el cual vibraciones de diferente origen 
+                se ajustan hasta lograr un mismo ritmo. Nuestro ritmo cardiaco puede, a través de la música, lograr valores normales (de 60 a 80 latidos por minuto) y una respuesta 
+                de relajación que disminuya la presión arterial.</p>
+                <div class="video-container">
+                    <div class="video-embed">
+                        <!-- Reemplaza "ID_VIDEO_1" con el ID real de tu primer video de YouTube -->
+                        <iframe src="https://www.youtube.com/embed/IjTkVy5d2hA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="video-embed">
+                        <!-- Reemplaza "ID_VIDEO_2" con el ID real de tu segundo video de YouTube -->
+                        <iframe src="https://www.youtube.com/embed/bIKvg9GnCvw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="video-embed">
+                        <!-- Reemplaza "ID_VIDEO_3" con el ID real de tu tercer video de YouTube -->
+                        <iframe src="https://www.youtube.com/embed/E8ECmGXZ-Iw" frameborder="0" allowfullscreen></iframe>
+                </div>
+        </div>
+    </div>  
+    <div id="seccion2" class="hidden">
+            <h2 class="text">Nivel De Estres 2</h2>
+            <p class="texto2">Recomendaciones:</p>
+            <p class="texto3">Los juegos de mesa ayudan a aliviar el estrés al proporcionar una distracción agradable, fomentar la interacción social, 
+                liberar endorfinas, mejorar la concentración y ofrecer una sensación de logro y control en un entorno estructurado. 
+                Estas actividades ofrecen una forma efectiva de reducir la tensión y mejorar el bienestar emocional.</p>
+                <div class="seccion imagen">
+                    <div class="imagen">
+                        <p class="texto4">SOPA DE LETRAS</p>
+                        <a href="https://api.razzlepuzzles.com/wordsearch?locale=es"><img src="./imagenes/sopa.jpg" alt="Imagen 1"></a>
+                    </div>
+                    <div class="imagen">
+                        <p class="texto4">ROMPECABEZAS</p>
+                        <a href="https://www.jigsawplanet.com/?lang=es-ES"><img src="./imagenes/rompecabezas.png" alt="Imagen 2"></a>
+                    </div>
+                    <div class="imagen">
+                        <p class="texto4">SUDOKUS</p>
+                        <a href="https://sudoku.com/es"><img src="./imagenes/sudoku.jpg" alt="Imagen 2"></a>
+                    </div>
+                    <div class="imagen">
+                        <p class="texto4">JUEGO PARA COLOREAR</p>
+                        <a href="https://www.dibujos.net/"><img src="./imagenes/colorear.png" alt="Imagen 2"></a>
+                    </div>
+                </div>
+    </div>
+    <div id="seccion3" class="hidden">
+        <h2 class="text">Nivel De Estres 3</h2>
+        <p class="texto2">Recomendaciones:</p>
+        <p class="texto3">El yoga enseña que el control de la respiración es fundamental para tomar el control del cuerpo y calmar la mente. 
+            Además, en el yoga, se fomenta la inclusión de la meditación y la relajación en la práctica. 
+            La meditación permite aumentar la conciencia y estar presente en el momento actual sin juzgar.
+        </p>
+            <div class="seccion imagen">
+                <div class="imagen">
+                    <p class="texto4">Perro mirando hacia abajo</p>
+                    <img src="./imagenes/yoga 1.png" alt="Imagen 1"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">Guerrero III</p>
+                    <img src="./imagenes/yoga 2.png" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">Guerrero II</p>
+                    <img src="./imagenes/yoga 3.png" alt="Imagen 3"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">Luna creciente</p>
+                    <img src="./imagenes/yoga 4.png" alt="Imagen 4"></a>
+                </div>
+            </div>
+            <div class="seccion imagen"> 
+                <div class="imagen">
+                    <p class="texto4">Perro hacia arriba</p>
+                    <img src="./imagenes/yoga 5.png" alt="Imagen 5"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">El bote</p>
+                    <img src="./imagenes/yoga 6.png" alt="Imagen 6"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">Postura facil</p>
+                    <img src="./imagenes/yoga 7.png" alt="Imagen 7"></a>
+                </div>
+                <div class="imagen">
+                    <p class="texto4">Postura facil con mundra</p>
+                    <img src="./imagenes/yoga 8.png" alt="Imagen 8"></a>
+                </div>
+            </div>
+        </div>
+    <div id="seccion4" class="hidden">
+        <h2 class="text">Nivel De Estres 4</h2>
+        <p class="texto2">Recomendaciones:</p>
+        <p class="texto3">La práctica de diversas manualidades ayuda a conectarnos con el presente, experimentar diferentes sensaciones físicas y prestar atención a la respiración, lo que puede ser una fórmula eficaz para liberarnos del estrés cotidiano. 
+            Además, al centrarnos en la creación de una obra de arte o proyecto, permitimos que nuestras preocupaciones se desvanezcan temporalmente, brindándonos un valioso alivio del estrés.</p>
+            <div class="seccion imagen">
+                <div class="imagen2">
+                    <p class="texto4">ORIGAMI</p>
+                    <img src="./imagenes/origami.png" alt="Imagen 1"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">MANDALAS</p>
+                    <img src="./imagenes/mandala.jpg" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">TEJIDO</p>
+                    <img src="./imagenes/tejido.png" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">LETTERING</p>
+                    <img src="./imagenes/lettering.png" alt="Imagen 2"></a>
+                </div>
+            </div>
+            <div class="seccion imagen"> 
+                <div class="imagen2">
+                    <p class="texto4">BISUTERÍA</p>
+                    <img src="./imagenes/bisuteria.png" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">PINTADO DE MACETAS</p>
+                    <img src="./imagenes/macetas.jpg" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">VELAS AROMATICAS</p>
+                    <img src="./imagenes/velas.jpg" alt="Imagen 2"></a>
+                </div>
+                <div class="imagen2">
+                    <p class="texto4">BORDADO</p>
+                    <img src="./imagenes/bordado.png" alt="Imagen 2"></a>
+                </div>
+            </div>
+    </div>
+
+    <div id="seccion5" class="hidden">
+        <h2 class="text">Nivel De Estres 5</h2>
+        <p class="texto2">Recomendaciones:</p>
+        <p class="texto3">Cuando nos movemos, nuestro cuerpo libera diferentes neuroquímicos. Los receptores opioides se vuelven más activos y eso significa que nuestros umbrales de dolor 
+            aumentan, lo que nos hace sentir menos dolor cuando bailamos. Además, el baile ayuda a aliviar el estrés. 
+            Al mover nuestro cuerpo al ritmo de la música, liberamos endorfinas, que son conocidas por sus propiedades relajantes y que contribuyen a reducir los niveles de estrés.</p>
+            <div class="video-container">
+                <div class="video-embed">
+                    <!-- Reemplaza "ID_VIDEO_1" con el ID real de tu primer video de YouTube -->
+                    <iframe src="https://www.youtube.com/embed/un9inxYgTTA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video-embed">
+                    <!-- Reemplaza "ID_VIDEO_2" con el ID real de tu segundo video de YouTube -->
+                    <iframe src="https://www.youtube.com/embed/UNFteIcVdUI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video-embed">
+                    <!-- Reemplaza "ID_VIDEO_3" con el ID real de tu tercer video de YouTube -->
+                    <iframe src="https://www.youtube.com/embed/FeR-4_Opt-g" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+    </div>
+    
+
+    <script src="funciones.js"></script>
+</body>
+</html>

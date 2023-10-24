@@ -1,0 +1,51 @@
+<div id="seccion5" class="hidden">
+    <h2>Nivel De Estres 5</h2>
+    <p class="texto2">Recomendaciones:</p>
+    <p class="texto3">Cuando nos movemos, nuestro cuerpo libera diferentes neuroquímicos. Los receptores opioides se vuelven más activos y eso significa que nuestros umbrales de dolor 
+        aumentan, lo que nos hace sentir menos dolor cuando bailamos. Además, el baile ayuda a aliviar el estrés. 
+        Al mover nuestro cuerpo al ritmo de la música, liberamos endorfinas, que son conocidas por sus propiedades relajantes y que contribuyen a reducir los niveles de estrés. </p>
+        <div class="video-container">
+            <div class="video-embed">
+                <!-- Reemplaza "ID_VIDEO_1" con el ID real de tu primer video de YouTube -->
+                <iframe src="https://www.youtube.com/embed/un9inxYgTTA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-embed">
+                <!-- Reemplaza "ID_VIDEO_2" con el ID real de tu segundo video de YouTube -->
+                <iframe src="https://www.youtube.com/embed/UNFteIcVdUI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-embed">
+                <!-- Reemplaza "ID_VIDEO_3" con el ID real de tu tercer video de YouTube -->
+                <iframe src="https://www.youtube.com/embed/FeR-4_Opt-g" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+</div>
+
+<div class="container">
+    <h1 class="texto">¿Cómo te sientes?</h1>
+    <p class="texto">Selecciona tu nivel de estres:</p>
+    <button class="rating-button" value="1" onclick="mostrarSeccion('seccion1')">1</button>
+    <button class="rating-button" value="2">2</button>
+    <button class="rating-button" value="3">3</button>
+    <button class="rating-button" value="4">4</button>
+    <button class="rating-button" value="5">5</button>
+    <p>Tu elección: <span id="selected-rating">N/A</span></p>
+</div> 
+<button id="mostrar-seccion-button">Mostrar Otra Sección</button>
+<div id="seccion-oculta" class="hidden">
+    <h2>Otra Sección</h2>
+    <p>Esta es otra sección que se mostrará cuando hagas clic en el botón.</p>
+</div>
+
+<p>Tu elección: <span id="selected-rating">N/A</span></p>
+const ratingButtons = document.querySelectorAll('.rating-button');
+        const selectedRating = document.getElementById('selected-rating');
+
+        ratingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const ratingValue = button.value;
+                selectedRating.textContent = ratingValue;
+                // Aquí puedes realizar acciones adicionales con el valor seleccionado, como enviarlo a un servidor.
+            });
+        });

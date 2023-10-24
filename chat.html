@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Chatbox</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img class="logo" src="./imagenes/logo.png" alt="Logo de Calm Oasis">
+        <h1 class="titulo-principal">CALM OASIS</h1>
+        <ul class="menu__lista">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo de Calm Oasis">
+        </ul>
+    </header>
+    <section class="linea">
+        <li class="menu_item"><a class="menu_admin" href="./home.html">Como Te Sientes</a></li>
+        <li class="menu_item"><a class="menu_admin" href="home.html">Chat Personalizado</a></li>
+    </section>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message received">Hola, ¿en qué puedo ayudarte?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Escribe un mensaje..." />
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <script src="./chat.js"></script>
+</body>
+</html>
